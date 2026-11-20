@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | SMIU Events Portal</title>
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Our own CSS (must come AFTER Bootstrap) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR (same on every page) ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg smiu-navbar navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">SMIU <span>Events</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="societies.html">Societies</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Find your next campus event</h1>
+        <p class="lead my-4">Browse upcoming events, discover societies and register in a minute.</p>
+        <a href="events.html" class="btn btn-smiu btn-lg">Browse Events</a>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED EVENTS CAROUSEL ===== -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Featured Events</h2>
+        <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="featured-slide slide-one">
+                <div>
+                  <span class="badge date-badge mb-2">5 Dec</span>
+                  <h3>Annual Tech Fest</h3>
+                  <p>Coding contests, robotics and a project showcase.</p>
+                  <a href="event-details.html" class="btn btn-smiu btn-sm">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="featured-slide slide-two">
+                <div>
+                  <span class="badge date-badge mb-2">12 Dec</span>
+                  <h3>Cultural Night</h3>
+                  <p>Music, food stalls and performances by student societies.</p>
+                  <a href="event-details.html" class="btn btn-smiu btn-sm">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="featured-slide slide-three">
+                <div>
+                  <span class="badge date-badge mb-2">18 Dec</span>
+                  <h3>Career Day</h3>
+                  <p>Meet companies, join CV clinics and attend short talks.</p>
+                  <a href="event-details.html" class="btn btn-smiu btn-sm">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== UPCOMING EVENTS (3 cards) ===== -->
+    <section class="section-padding pt-0">
+      <div class="container">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="card event-card h-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge date-badge">28 Nov</span>
+                <span class="badge category-badge">Sports</span>
+                <h3 class="h5 mt-3">Inter-Department Cricket</h3>
+                <p class="text-muted">Teams from every department compete for the trophy.</p>
+                <a href="event-details.html" class="btn btn-outline-dark btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card event-card h-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge date-badge">1 Dec</span>
+                <span class="badge category-badge">Workshop</span>
+                <h3 class="h5 mt-3">Web Development Bootcamp</h3>
+                <p class="text-muted">A hands-on day building a site with HTML, CSS and Bootstrap.</p>
+                <a href="event-details.html" class="btn btn-outline-dark btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card event-card h-100 shadow-sm">
+              <div class="card-body">
+                <span class="badge date-badge">8 Dec</span>
+                <span class="badge category-badge">Seminar</span>
+                <h3 class="h5 mt-3">Entrepreneurship Talk</h3>
+                <p class="text-muted">Founders share how they started and what they learned.</p>
+                <a href="event-details.html" class="btn btn-outline-dark btn-sm">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY JOIN (3 feature columns with Bootstrap Icons) ===== -->
+    <section class="section-padding bg-white">
+      <div class="container text-center">
+        <h2 class="section-title">Why Join?</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="feature-icon"><i class="bi bi-people-fill"></i></div>
+            <h3 class="h5">Meet people</h3>
+            <p class="text-muted">Make friends outside your own department and batch.</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="feature-icon"><i class="bi bi-lightbulb-fill"></i></div>
+            <h3 class="h5">Learn new skills</h3>
+            <p class="text-muted">Workshops and talks that go beyond the classroom.</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="feature-icon"><i class="bi bi-award-fill"></i></div>
+            <h3 class="h5">Build your CV</h3>
+            <p class="text-muted">Take part, lead and earn certificates employers notice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (same on every page) ===== -->
+  <footer class="smiu-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h5>SMIU Events Portal</h5>
+          <p>Find university events, explore societies and register in one place.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="events.html">Events</a></li>
+            <li><a href="societies.html">Societies</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h5>Student Affairs Office</h5>
+          <p class="mb-1"><i class="bi bi-geo-alt"></i> SMIU, Karachi</p>
+          <p class="mb-1"><i class="bi bi-envelope"></i> studentaffairs@smiu.edu.pk</p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <p class="text-center small mb-0">&copy; 2026 SMIU Events Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

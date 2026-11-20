@@ -1,0 +1,186 @@
+/* ==========================================================
+   SMIU Events Portal - shared stylesheet
+   Linked AFTER Bootstrap so these rules can override it.
+   ========================================================== */
+
+/* ---------- 1. Colour theme and fonts (CSS variables) ---------- */
+:root {
+  --smiu-primary: #0f4c5c;      /* deep teal */
+  --smiu-primary-dark: #0a3440;
+  --smiu-accent: #f2a541;       /* amber */
+  --smiu-accent-dark: #d98a1f;
+  --smiu-surface: #f3f7f7;      /* light page background */
+  --smiu-text: #1d2b2f;
+  --smiu-muted: #5d6f74;
+  --smiu-radius: 14px;
+  --smiu-shadow: 0 10px 24px rgba(15, 76, 92, 0.18);
+}
+
+/* ---------- 2. Base styles ---------- */
+body {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--smiu-text);
+  background-color: var(--smiu-surface);
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- 3. Navbar ---------- */
+.smiu-navbar {
+  background-color: var(--smiu-primary);
+}
+
+.smiu-navbar .navbar-brand {
+  color: #fff;
+  font-weight: 800;
+}
+
+.smiu-navbar .navbar-brand span {
+  color: var(--smiu-accent);
+}
+
+.smiu-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.smiu-navbar .nav-link:hover,
+.smiu-navbar .nav-link.active {
+  color: #fff;
+  border-bottom-color: var(--smiu-accent);   /* highlights the active page */
+}
+
+/* ---------- 4. Hero section (gradient) ---------- */
+.hero-section {
+  background: linear-gradient(135deg, var(--smiu-primary-dark) 0%, var(--smiu-primary) 55%, #1b7a8c 100%);
+  color: #fff;
+  padding: 6rem 0 5rem;
+}
+
+.hero-section .lead {
+  max-width: 36rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ---------- 5. Custom button ---------- */
+.btn-smiu {
+  background-color: var(--smiu-accent);
+  color: var(--smiu-primary-dark);
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 0.7rem 1.8rem;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-smiu:hover {
+  background-color: var(--smiu-accent-dark);
+  color: var(--smiu-primary-dark);
+  transform: translateY(-2px);
+}
+
+/* ---------- 6. Section spacing ---------- */
+.section-padding {
+  padding: 4rem 0;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+  color: var(--smiu-primary);
+}
+
+/* ---------- 7. Card hover effect (box-shadow + transform) ---------- */
+.event-card,
+.society-card,
+.team-card {
+  border: none;
+  border-radius: var(--smiu-radius);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.event-card:hover,
+.society-card:hover,
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--smiu-shadow);
+}
+
+/* ---------- 8. Carousel (featured events) ---------- */
+.featured-slide {
+  min-height: 320px;
+  border-radius: var(--smiu-radius);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 3rem 4rem;
+}
+
+.slide-one   { background: linear-gradient(120deg, #0f4c5c, #2a9d8f); }
+.slide-two   { background: linear-gradient(120deg, #5f0f40, #c1553b); }
+.slide-three { background: linear-gradient(120deg, #23395b, #5c7aea); }
+
+/* ---------- 9. Date / category badges ---------- */
+.date-badge {
+  background-color: var(--smiu-accent);
+  color: var(--smiu-primary-dark);
+  font-weight: 700;
+}
+
+.category-badge {
+  background-color: var(--smiu-primary);
+  color: #fff;
+}
+
+/* ---------- 10. Feature icons (Why Join section) ---------- */
+.feature-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--smiu-primary);
+  color: var(--smiu-accent);
+  font-size: 1.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* ---------- 11. Form focus colour ---------- */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--smiu-primary);
+  box-shadow: 0 0 0 0.2rem rgba(15, 76, 92, 0.2);
+}
+
+/* ---------- 12. Footer ---------- */
+.smiu-footer {
+  background-color: var(--smiu-primary-dark);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 3rem 0 1.5rem;
+  margin-top: 3rem;
+}
+
+.smiu-footer a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.smiu-footer a:hover {
+  color: var(--smiu-accent);
+}
+
+.smiu-footer h5 {
+  color: #fff;
+}
+
+/* ---------- 13. Phone tweaks ---------- */
+@media (max-width: 576px) {
+  .hero-section { padding: 4rem 0 3rem; }
+  .featured-slide { padding: 2rem 1.5rem; }
+}
+
