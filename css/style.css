@@ -241,4 +241,19 @@ h1, h2, h3, h4, h5 {
   transform: scale(1.1);
   background-color: var(--smiu-primary-dark);
 }
+ibrahim
+/* ---------- 15. Societies & Registration Form Styling ---------- */
+.society-badge {
+  background-color: var(--smiu-primary);
+  color: var(--smiu-accent);
+  font-weight: 600;
+}
+
+.alert-smiu {
+  background-color: rgba(15, 76, 92, 0.1);
+  border-left: 4px solid var(--smiu-primary);
+  color: var(--smiu-text);
+}
+=======
+main
 main
