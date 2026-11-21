@@ -200,6 +200,35 @@ h1, h2, h3, h4, h5 {
   right: 8%;
 }
 
+ alpha
+
+/* ---------- 14. Events & Schedule Table Styling ---------- */
+.schedule-table thead {
+  background-color: var(--smiu-primary);
+  color: #fff;
+}
+
+.schedule-table tbody tr:hover {
+  background-color: rgba(15, 76, 92, 0.08);
+}
+
+.event-banner {
+  border-radius: var(--smiu-radius);
+  max-height: 420px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.status-open {
+  background-color: #198754;
+  color: #fff;
+}
+
+.status-closing {
+  background-color: var(--smiu-accent);
+  color: var(--smiu-primary-dark);
+}
+
 @media (max-width: 576px) {
   .featured-caption p { display: none; }
 }
@@ -212,3 +241,4 @@ h1, h2, h3, h4, h5 {
   transform: scale(1.1);
   background-color: var(--smiu-primary-dark);
 }
+main
