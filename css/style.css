@@ -201,3 +201,13 @@ h1, h2, h3, h4, h5 {
   object-fit: cover;
   width: 100%;
 }
+
+.status-open {
+  background-color: #198754;
+  color: #fff;
+}
+
+.status-closing {
+  background-color: var(--smiu-accent);
+  color: var(--smiu-primary-dark);
+}
