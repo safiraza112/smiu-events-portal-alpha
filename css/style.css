@@ -180,10 +180,27 @@ h1, h2, h3, h4, h5 {
 
 /* ---------- 13. Phone tweaks ---------- */
 @media (max-width: 576px) {
-  .hero-section { padding: 4rem 0 3rem; }
+  .hero-section { padding: 3rem 0 2.5rem; }
+  .hero-section h1 { font-size: 2rem; }
   .featured-slide { padding: 2rem 1.5rem; }
 }
+/* ---------- Carousel photos ---------- */
+.carousel-photo {
+  height: 340px;
+  object-fit: cover;
+  border-radius: var(--smiu-radius);
+}
 
+.featured-caption {
+  background: rgba(10, 52, 64, 0.75);
+  border-radius: var(--smiu-radius);
+  padding: 1rem 1.25rem;
+  bottom: 1.5rem;
+  left: 8%;
+  right: 8%;
+}
+
+ alpha
 
 /* ---------- 14. Events & Schedule Table Styling ---------- */
 .schedule-table thead {
@@ -211,3 +228,17 @@ h1, h2, h3, h4, h5 {
   background-color: var(--smiu-accent);
   color: var(--smiu-primary-dark);
 }
+
+@media (max-width: 576px) {
+  .featured-caption p { display: none; }
+}
+/* ---------- Why Join icon hover ---------- */
+.feature-icon {
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.feature-icon:hover {
+  transform: scale(1.1);
+  background-color: var(--smiu-primary-dark);
+}
+main
