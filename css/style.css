@@ -184,3 +184,20 @@ h1, h2, h3, h4, h5 {
   .featured-slide { padding: 2rem 1.5rem; }
 }
 
+
+/* ---------- 14. Events & Schedule Table Styling ---------- */
+.schedule-table thead {
+  background-color: var(--smiu-primary);
+  color: #fff;
+}
+
+.schedule-table tbody tr:hover {
+  background-color: rgba(15, 76, 92, 0.08);
+}
+
+.event-banner {
+  border-radius: var(--smiu-radius);
+  max-height: 420px;
+  object-fit: cover;
+  width: 100%;
+}
