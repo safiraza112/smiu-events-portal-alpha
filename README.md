@@ -7,7 +7,7 @@ The SMIU Events Portal is a front-end website built for the SMIU Student Affairs
 |---|---|---|---|
 | Member 1 (Team Lead) | | | Repo setup, navbar/footer, index.html |
 | Member 2 | | | events.html, event-details.html |
-| Member 3 | | | societies.html, register.html, contact.html, README |
+| Ibrahim | Roll No. | @IBRAHIM_USERNAME | societies.html, register.html, contact.html, README |
 
 ## Screenshots
 - Home page (phone):
