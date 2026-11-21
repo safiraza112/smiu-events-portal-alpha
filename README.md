@@ -6,8 +6,13 @@ The SMIU Events Portal is a front-end website built for the SMIU Student Affairs
 | Name | Roll No. | GitHub Username | Pages Built |
 |---|---|---|---|
 | Member 1 (Team Lead) | | | Repo setup, navbar/footer, index.html |
+ ibrahim
 | Member 2 | | | events.html, event-details.html |
 | Ibrahim | Roll No. | @IBRAHIM_USERNAME | societies.html, register.html, contact.html, README |
+=======
+| Wakeel Hussain | BSE-24S-054 | @your-github-username | events.html, event-details.html |
+| Member 3 | | | societies.html, register.html, contact.html, README |
+ main
 
 ## Screenshots
 - Home page (phone):
@@ -23,4 +28,4 @@ The SMIU Events Portal is a front-end website built for the SMIU Student Affairs
 2. Open `index.html` in a browser (internet is needed for Bootstrap CDN).
 
 ## Teamwork Problem and Solution
-(One paragraph: describe the `style.css` merge conflict and how you solved it.)
+While working on the project, we faced a merge conflict in css/style.css. Member 1 had already merged Pull Request #1 into main with carousel photo styles and the icon hover effect. After that, Member 2 (Wakeel Hussain) opened Pull Request #2 from his alpha branch with new table and status badge styles. Both of us had added CSS to the same part of style.css, so GitHub showed "This branch has conflicts that must be resolved" and blocked the merge. We solved it with GitHub's "Resolve conflicts" editor. We removed only the conflict marker lines (<<<<<<<, ======= and >>>>>>>) and kept both sets of CSS, so nobody's work was deleted. Then we marked the file as resolved, committed the merge, approved the Pull Request and merged it into main. After that, we pulled the latest main and checked that the Home page and the new styles still worked. From this, we learned to pull the latest main before starting new work and to merge Pull Requests one at a time to avoid conflicts.
