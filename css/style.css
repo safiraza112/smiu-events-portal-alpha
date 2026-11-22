@@ -254,6 +254,13 @@ ibrahim
   border-left: 4px solid var(--smiu-primary);
   color: var(--smiu-text);
 }
-=======
+
 main
 main
+/* ---------- Contact page ---------- */
+.contact-form-panel {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: var(--smiu-radius);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}

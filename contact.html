@@ -39,10 +39,50 @@
 
   <!-- ===== MAIN CONTENT ===== -->
   <main>
+       <!-- ===== PAGE HEADER ===== -->
+    <section class="hero-section py-5">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="lead mb-0">Questions about an event or society? Write to us.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT FORM + OFFICE DETAILS ===== -->
     <section class="section-padding">
       <div class="container">
-        <h1 class="section-title">Contact</h1>
-        <!-- TODO: build this page on your own branch -->
+        <div class="row g-4">
+          <div class="col-12 col-lg-7">
+            <form class="contact-form-panel">
+              <div class="mb-3">
+                <label for="cName" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="cName" placeholder="Your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="cEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="cEmail" placeholder="you@smiu.edu.pk" required>
+              </div>
+              <div class="mb-3">
+                <label for="cSubject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="cSubject" placeholder="What is this about?" required>
+              </div>
+              <div class="mb-3">
+                <label for="cMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="cMessage" rows="5" placeholder="Write your message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-smiu">Send Message</button>
+            </form>
+          </div>
+          <div class="col-12 col-lg-5">
+            <h2 class="h4 section-title mb-3">Office Details</h2>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-geo-alt"></i> Student Affairs Office, SMIU, Karachi</li>
+              <li class="mb-2"><i class="bi bi-envelope"></i> studentaffairs@smiu.edu.pk</li>
+              <li class="mb-2"><i class="bi bi-telephone"></i> 021-0000-0000</li>
+              <li class="mb-3"><i class="bi bi-clock"></i> Mon - Fri, 9:00 AM - 4:00 PM</li>
+            </ul>
+            <img src="images/map-placeholder.jpg" class="img-fluid rounded" alt="Map placeholder showing the SMIU campus">
+          </div>
+        </div>
       </div>
     </section>
   </main>
