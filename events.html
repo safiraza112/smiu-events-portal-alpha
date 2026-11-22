@@ -2,82 +2,191 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events | SMIU Events Portal</title>
-  <!-- Bootstrap 5.3.3 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Our own CSS (must come AFTER Bootstrap) -->
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://jsdelivr.net" rel="stylesheet">
+  <link href="https://jsdelivr.net" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ===== NAVBAR (same on every page) ===== -->
+  <!-- Navigation -->
   <header>
-    <nav class="navbar navbar-expand-lg smiu-navbar navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark smiu-navbar sticky-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">SMIU <span>Events</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="events.html" aria-current="page">Events</a></li>
-          <li class="nav-item"><a class="nav-link" href="societies.html">Societies</a></li>
-          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="societies.html">Societies</a></li>
+            <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- ===== MAIN CONTENT ===== -->
   <main>
-    <section class="section-padding">
+    <!-- Page Header -->
+    <section class="hero-section py-5">
       <div class="container">
-        <h1 class="section-title">Events</h1>
-        <!-- TODO: build this page on your own branch -->
+        <h1 class="display-5 fw-bold">Campus Events</h1>
+        <p class="lead mb-0">Explore upcoming workshops, competitions, seminars, and festivals across SMIU.</p>
       </div>
     </section>
-  </main>
 
-  <!-- ===== FOOTER (same on every page) ===== -->
-  <footer class="smiu-footer">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md-5">
-          <h5>SMIU Events Portal</h5>
-          <p>Find university events, explore societies and register in one place.</p>
-        </div>
-        <div class="col-6 col-md-3">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="events.html">Events</a></li>
-            <li><a href="societies.html">Societies</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md-4">
-          <h5>Student Affairs Office</h5>
-          <p class="mb-1"><i class="bi bi-geo-alt"></i> SMIU, Karachi</p>
-          <p class="mb-1"><i class="bi bi-envelope"></i> studentaffairs@smiu.edu.pk</p>
+    <!-- 8 Event Cards Grid (1 col phone, 2 tablet, 4 desktop) -->
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title">All Upcoming Events</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+          <!-- Event 1 -->
+          <div class="col">
+            <div class="card h-100 event-card">
+              <img src="images/event-cricket.jpg" class="card-img-top" alt="Students playing in Inter-Department Cricket tournament" style="height: 190px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge date-badge me-1">28 Nov</span>
+                  <span class="badge category-badge">Sports</span>
+                </div>
+                <h5 class="card-title">Inter-Department Cricket</h5>
+                <p class="card-text text-muted small">Teams from every department compete for the annual SMIU championship trophy.</p>
+                <a href="event-details.html" class="btn btn-smiu btn-sm mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="col">
+            <div class="card h-100 event-card">
+              <img src="images/event-web-bootcamp.jpg" class="card-img-top" alt="Students coding during Web Development Bootcamp" style="height: 190px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge date-badge me-1">1 Dec</span>
+                  <span class="badge category-badge">Workshop</span>
+                </div>
+                <h5 class="card-title">Web Dev Bootcamp</h5>
+                <p class="card-text text-muted small">A hands-on full-day workshop building responsive sites with HTML, CSS, and Bootstrap.</p>
+                <a href="event-details.html" class="btn btn-smiu btn-sm mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="col">
+            <div class="card h-100 event-card">
+              <img src="images/event-tech-fest.jpg" class="card-img-top" alt="Participants showcasing projects at Annual Tech Fest" style="height: 190px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge date-badge me-1">5 Dec</span>
+                  <span class="badge category-badge">Tech</span>
+                </div>
+                <h5 class="card-title">Annual Tech Fest</h5>
+                <p class="card-text text-muted small">Speed programming contests, robotics battles, and final-year project exhibitions.</p>
+                <a href="event-details.html" class="btn btn-smiu btn-sm mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 4 -->
+          <div class="col">
+            <div class="card h-100 event-card">
+              <img src="images/event-entrepreneurship.jpg" class="card-img-top" alt="Guest speaker at Entrepreneurship Talk seminar" style="height: 190px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge date-badge me-1">8 Dec</span>
+                  <span class="badge category-badge">Seminar</span>
+                </div>
+                <h5 class="card-title">Entrepreneurship Talk</h5>
+                <p class="card-text text-muted small">Startup founders share practical lessons on launching tech ventures from university.</p>
+                <a href="event-details.html" class="btn btn-smiu btn-sm mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 5 -->
+          <div class="col">
+            <div class="card h-100 event-card">
+              <img src="images/event-cultural-night.jpg" class="card-img-top" alt="Live stage performance at SMIU Cultural Night" style="height: 190px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge date-badge me-1">12 Dec</span>
+                  <span class="badge category-badge">Cultural</span>
+                </div>
+                <h5 class="card-title">Cultural Night</h5>
+                <p class="card-text text-muted small">An evening of live music, traditional performances, and student food stalls.</p>
+                <a href="event-details.html" class="btn btn-smiu btn-sm mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 6 -->
+          <div class="col">
+            <div class="card h-100 event-card">
+              <img src="images/event-debate.jpg" class="card-img-top" alt="Student speaker at Inter-University Debate Championship" style="height: 190px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge date-badge me-1">15 Dec</span>
+                  <span class="badge category-badge">Literary</span>
+                </div>
+                <h5 class="card-title">All-Karachi Debate</h5>
+                <p class="card-text text-muted small">Bilingual parliamentary debate competition hosted by the SMIU Literary Society.</p>
+                <a href="event-details.html" class="btn btn-smiu btn-sm mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 7 -->
+          <div class="col">
+            <div class="card h-100 event-card">
+              <img src="images/event-career-day.jpg" class="card-img-top" alt="Students networking with recruiters at Career Day" style="height: 190px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge date-badge me-1">18 Dec</span>
+                  <span class="badge category-badge">Career</span>
+                </div>
+                <h5 class="card-title">SMIU Career Day</h5>
+                <p class="card-text text-muted small">Meet top software houses, attend live CV clinics, and apply for internships.</p>
+                <a href="event-details.html" class="btn btn-smiu btn-sm mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 8 -->
+          <div class="col">
+            <div class="card h-100 event-card">
+              <img src="images/event-art-exhibition.jpg" class="card-img-top" alt="Paintings and photography displayed at Campus Art Exhibition" style="height: 190px; object-fit: cover;">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge date-badge me-1">22 Dec</span>
+                  <span class="badge category-badge">Arts</span>
+                </div>
+                <h5 class="card-title">Campus Art Exhibition</h5>
+                <p class="card-text text-muted small">Showcasing student paintings, calligraphy, digital illustrations, and photography.</p>
+                <a href="event-details.html" class="btn btn-smiu btn-sm mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <hr class="border-secondary">
-      <p class="text-center small mb-0">&copy; 2026 SMIU Events Portal. All rights reserved.</p>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Bootstrap 5.3.3 JS bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-
-<!-- Member 2: Events Grid & Schedule Section (Wakeel Hussain - BSE-24S-054) -->
+    <!-- Monthly Schedule Table -->
+    <section class="section-padding pt-0">
+      <div class="container">
+        <h2 class="section-title">Monthly Event Schedule</h2>
+        <div class="table-responsive shadow-sm rounded">
+          <table class="table table-striped table-hover align-middle mb-0 schedule-table bg-white">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
