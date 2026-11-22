@@ -264,3 +264,8 @@ main
   border-radius: var(--smiu-radius);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 }
+/* ---------- Team cards ---------- */
+.team-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
