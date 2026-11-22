@@ -39,10 +39,98 @@
 
   <!-- ===== MAIN CONTENT ===== -->
   <main>
+       <!-- ===== PAGE HEADER ===== -->
+    <section class="hero-section py-5">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="lead mb-0">Questions about an event or society? Write to us.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT FORM + OFFICE DETAILS ===== -->
     <section class="section-padding">
       <div class="container">
-        <h1 class="section-title">Contact</h1>
-        <!-- TODO: build this page on your own branch -->
+        <div class="row g-4">
+          <div class="col-12 col-lg-7">
+            <form class="contact-form-panel">
+              <div class="mb-3">
+                <label for="cName" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="cName" placeholder="Your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="cEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="cEmail" placeholder="you@smiu.edu.pk" required>
+              </div>
+              <div class="mb-3">
+                <label for="cSubject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="cSubject" placeholder="What is this about?" required>
+              </div>
+              <div class="mb-3">
+                <label for="cMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="cMessage" rows="5" placeholder="Write your message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-smiu">Send Message</button>
+            </form>
+          </div>
+          <div class="col-12 col-lg-5">
+            <h2 class="h4 section-title mb-3">Office Details</h2>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-geo-alt"></i> Student Affairs Office, SMIU, Karachi</li>
+              <li class="mb-2"><i class="bi bi-envelope"></i> studentaffairs@smiu.edu.pk</li>
+              <li class="mb-2"><i class="bi bi-telephone"></i> 021-0000-0000</li>
+              <li class="mb-3"><i class="bi bi-clock"></i> Mon - Fri, 9:00 AM - 4:00 PM</li>
+            </ul>
+            <img src="images/map-placeholder.jpg" class="img-fluid rounded" alt="Map placeholder showing the SMIU campus">
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- ===== MEET THE TEAM ===== -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <h2 class="section-title text-center">Meet the Team</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card team-card text-center h-100 shadow-sm">
+              <img src="images/team-member-1.jpg" class="card-img-top" alt="Photo of Safi Raza">
+              <div class="card-body">
+                <h3 class="h5">Safi Raza</h3>
+                <p class="mb-1 text-muted">Roll No. BSE-24S-069</p>
+                <span class="badge category-badge">Team Lead - Home page and Contact page</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card team-card text-center h-100 shadow-sm">
+              <img src="images/team-member-2.jpg" class="card-img-top" alt="Photo of Wakeel Hussain">
+              <div class="card-body">
+                <h3 class="h5">Wakeel Hussain</h3>
+                <p class="mb-1 text-muted">Roll No. BSE-24S-054</p>
+                <span class="badge category-badge">Events and Event Details pages</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card team-card text-center h-100 shadow-sm">
+              <img src="images/team-member-3.jpg" class="card-img-top" alt="Photo of Ibrahim Abbasi">
+              <div class="card-body">
+                <h3 class="h5">Ibrahim Abbasi</h3>
+                <p class="mb-1 text-muted">Roll No. BSE-24S-102</p>
+                <span class="badge category-badge">Societies and Register pages</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card team-card text-center h-100 shadow-sm">
+              <img src="images/team-member-4.jpg" class="card-img-top" alt="Photo of Umar Khan">
+              <div class="card-body">
+                <h3 class="h5">Umar Khan</h3>
+                <p class="mb-1 text-muted">Roll No. BSE-24S-095</p>
+                <span class="badge category-badge">Images and README</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
