@@ -1,7 +1,7 @@
-/* ==========================================================
+/* 
    SMIU Events Portal - shared stylesheet
    Linked AFTER Bootstrap so these rules can override it.
-   ========================================================== */
+   */
 
 /* ---------- 1. Colour theme and fonts (CSS variables) ---------- */
 :root {
@@ -255,8 +255,6 @@ ibrahim
   color: var(--smiu-text);
 }
 
-main
-main
 /* ---------- Contact page ---------- */
 .contact-form-panel {
   background-color: #fff;
@@ -308,4 +306,34 @@ main
       url("../images/campus-hero.jpg") center / cover no-repeat;
     padding: 4.5rem 0 3.5rem;
   }
+}
+/* ---------- Navbar logo and full name ---------- */
+.brand-logo {
+  height: 42px;
+  width: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 3px;
+  margin-right: 0.6rem;
+}
+
+.smiu-navbar .navbar-brand .brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.brand-text strong {
+  font-size: 1.05rem;
+}
+
+.brand-text small {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 400px) {
+  .brand-text small { display: none; }
 }
