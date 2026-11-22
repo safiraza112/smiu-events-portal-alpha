@@ -269,3 +269,43 @@ main
   height: 220px;
   object-fit: cover;
 }
+/* ---------- Home hero with campus photo ---------- */
+.hero-campus {
+  background:
+    linear-gradient(100deg, rgba(10, 52, 64, 0.92) 0%, rgba(15, 76, 92, 0.75) 45%, rgba(15, 76, 92, 0.25) 100%),
+    url("../images/campus-hero.jpg") center / cover no-repeat;
+  padding: 7rem 0 6rem;
+}
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--smiu-accent);
+  margin-bottom: 0.75rem;
+}
+
+.hero-stats {
+  max-width: 28rem;
+}
+
+.hero-stats strong {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--smiu-accent);
+}
+
+.hero-stats span {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 576px) {
+  .hero-campus {
+    background:
+      linear-gradient(rgba(10, 52, 64, 0.88), rgba(10, 52, 64, 0.72)),
+      url("../images/campus-hero.jpg") center / cover no-repeat;
+    padding: 4.5rem 0 3.5rem;
+  }
+}
