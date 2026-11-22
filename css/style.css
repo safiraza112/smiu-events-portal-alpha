@@ -306,6 +306,7 @@ ibrahim
       url("../images/campus-hero.jpg") center / cover no-repeat;
     padding: 4.5rem 0 3.5rem;
   }
+feature/navbar-logo
 }
 /* ---------- Navbar logo and full name ---------- */
 .brand-logo {
@@ -336,4 +337,6 @@ ibrahim
 
 @media (max-width: 400px) {
   .brand-text small { display: none; }
+
+ main
 }
