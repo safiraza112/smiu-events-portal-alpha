@@ -5,14 +5,11 @@ The SMIU Events Portal is a front-end website built for the SMIU Student Affairs
 ## Group Members
 | Name | Roll No. | GitHub Username | Pages Built |
 |---|---|---|---|
-| Member 1 (Team Lead) | | | Repo setup, navbar/footer, index.html |
- ibrahim
-| Member 2 | | | events.html, event-details.html |
-| Ibrahim | Roll No. | @IBRAHIM_USERNAME | societies.html, register.html, contact.html, README |
-=======
-| Wakeel Hussain | BSE-24S-054 | @your-github-username | events.html, event-details.html |
-| Member 3 | | | societies.html, register.html, contact.html, README |
- main
+| Safi Raza (Member 1, Team Lead) | BSE-24S-069 | safiraza112 | Repo setup, navbar/footer, index.html, contact.html |
+| Wakeel Hussain (Member 2) | BSE-24S-054 | wakeelh1 | events.html, event-details.html |
+| Ibrahim Abbasi (Member 3) | BSE-24S-102 | abbasiibrahim851-web | societies.html, register.html |
+| Umar Khan (Member 4) | BSE-24S-095 | umarkhan987 | Images and README |
+
 
 ## Screenshots
 - Home page (phone):
