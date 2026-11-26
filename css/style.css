@@ -1,7 +1,7 @@
-/* ==========================================================
+/* 
    SMIU Events Portal - shared stylesheet
    Linked AFTER Bootstrap so these rules can override it.
-   ========================================================== */
+   */
 
 /* ---------- 1. Colour theme and fonts (CSS variables) ---------- */
 :root {
@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5 {
   right: 8%;
 }
 
- alpha
+ 
 
 /* ---------- 14. Events & Schedule Table Styling ---------- */
 .schedule-table thead {
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5 {
   transform: scale(1.1);
   background-color: var(--smiu-primary-dark);
 }
-ibrahim
+
 /* ---------- 15. Societies & Registration Form Styling ---------- */
 .society-badge {
   background-color: var(--smiu-primary);
@@ -255,8 +255,6 @@ ibrahim
   color: var(--smiu-text);
 }
 
-main
-main
 /* ---------- Contact page ---------- */
 .contact-form-panel {
   background-color: #fff;
@@ -268,4 +266,77 @@ main
 .team-card .card-img-top {
   height: 220px;
   object-fit: cover;
+}
+/* ---------- Home hero with campus photo ---------- */
+.hero-campus {
+  background:
+    linear-gradient(100deg, rgba(10, 52, 64, 0.92) 0%, rgba(15, 76, 92, 0.75) 45%, rgba(15, 76, 92, 0.25) 100%),
+    url("../images/campus-hero.jpg") center / cover no-repeat;
+  padding: 7rem 0 6rem;
+}
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--smiu-accent);
+  margin-bottom: 0.75rem;
+}
+
+.hero-stats {
+  max-width: 28rem;
+}
+
+.hero-stats strong {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--smiu-accent);
+}
+
+.hero-stats span {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 576px) {
+  .hero-campus {
+    background:
+      linear-gradient(rgba(10, 52, 64, 0.88), rgba(10, 52, 64, 0.72)),
+      url("../images/campus-hero.jpg") center / cover no-repeat;
+    padding: 4.5rem 0 3.5rem;
+  }
+feature/navbar-logo
+}
+/* ---------- Navbar logo and full name ---------- */
+.brand-logo {
+  height: 42px;
+  width: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 3px;
+  margin-right: 0.6rem;
+}
+
+.smiu-navbar .navbar-brand .brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.brand-text strong {
+  font-size: 1.05rem;
+}
+
+.brand-text small {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 400px) {
+  .brand-text small { display: none; }
+
+ main
 }
