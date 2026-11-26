@@ -2,6 +2,8 @@
 
 The SMIU Events Portal is a front-end website built for the SMIU Student Affairs Office. Students can browse upcoming events, explore societies and register for events. It has 6 responsive pages and is built with HTML, CSS and Bootstrap 5.3.3. It was developed as a group project using one shared GitHub repository, separate branches, Pull Requests and code review.
 
+**Live Demo:** [https://safiraza112.github.io/smiu-events-portal-alpha](https://safiraza112.github.io/smiu-events-portal-alpha/)
+
 ## Group Members
 
 | Name | Roll No. | GitHub Username | Pages Built |
