@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore SMIU student societies and apply for membership.">
   <title>Societies | SMIU Events Portal</title>
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
@@ -35,126 +36,95 @@
   </header>
 
   <main>
-    <!-- Page Header -->
-    <section class="hero-section py-5">
+    <!-- ===== HERO ===== -->
+    <section class="hero-section">
       <div class="container">
-        <h1 class="display-5 fw-bold">Student Societies</h1>
-        <p class="lead mb-0">Join active student-run clubs at SMIU to build leadership, creativity, and teamwork skills.</p>
+        <h1 class="display-4 fw-bold">Explore student societies</h1>
+        <p class="lead mt-4 mb-0">Find a society that matches your interests and apply in a minute.</p>
       </div>
     </section>
 
-    <!-- Societies Grid -->
+    <!-- ===== SOCIETIES (sample content, replace with real societies) ===== -->
     <section class="section-padding">
       <div class="container">
-        <!-- Bootstrap Alert Component -->
-        <div class="alert alert-smiu alert-dismissible fade show d-flex align-items-center mb-4" role="alert">
-          <i class="bi bi-megaphone-fill fs-4 me-3 text-primary"></i>
-          <div>
-            <strong>Fall 2026 Society Admissions Open!</strong> Apply before <strong>30 November 2026</strong> to join up to two official SMIU societies.
+        <h2 class="section-title">Our Societies</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card event-card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <div class="feature-icon"><i class="bi bi-code-slash" aria-hidden="true"></i></div>
+                <div><span class="badge category-badge">Technology</span></div>
+                <h3 class="h5 mt-3">Computing Society</h3>
+                <p class="text-muted">Coding contests, workshops and team projects.</p>
+                <a href="register.html" class="btn btn-outline-dark btn-sm mt-auto align-self-start">Join Society</a>
+              </div>
+            </div>
           </div>
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card event-card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <div class="feature-icon"><i class="bi bi-trophy-fill" aria-hidden="true"></i></div>
+                <div><span class="badge category-badge">Sports</span></div>
+                <h3 class="h5 mt-3">Sports Society</h3>
+                <p class="text-muted">Practice sessions and matches between departments.</p>
+                <a href="register.html" class="btn btn-outline-dark btn-sm mt-auto align-self-start">Join Society</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card event-card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <div class="feature-icon"><i class="bi bi-chat-quote-fill" aria-hidden="true"></i></div>
+                <div><span class="badge category-badge">Debate</span></div>
+                <h3 class="h5 mt-3">Debating Society</h3>
+                <p class="text-muted">Improve your public speaking and join debate contests.</p>
+                <a href="register.html" class="btn btn-outline-dark btn-sm mt-auto align-self-start">Join Society</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card event-card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <div class="feature-icon"><i class="bi bi-palette-fill" aria-hidden="true"></i></div>
+                <div><span class="badge category-badge">Arts</span></div>
+                <h3 class="h5 mt-3">Arts &amp; Media Society</h3>
+                <p class="text-muted">Design, photography and performances at campus events.</p>
+                <a href="register.html" class="btn btn-outline-dark btn-sm mt-auto align-self-start">Join Society</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card event-card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <div class="feature-icon"><i class="bi bi-rocket-takeoff-fill" aria-hidden="true"></i></div>
+                <div><span class="badge category-badge">Business</span></div>
+                <h3 class="h5 mt-3">Entrepreneurship Society</h3>
+                <p class="text-muted">Share startup ideas and learn from founders.</p>
+                <a href="register.html" class="btn btn-outline-dark btn-sm mt-auto align-self-start">Join Society</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card event-card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <div class="feature-icon"><i class="bi bi-tree-fill" aria-hidden="true"></i></div>
+                <div><span class="badge category-badge">Environment</span></div>
+                <h3 class="h5 mt-3">Environmental Society</h3>
+                <p class="text-muted">Campus clean-up drives and awareness campaigns.</p>
+                <a href="register.html" class="btn btn-outline-dark btn-sm mt-auto align-self-start">Join Society</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <h2 class="section-title">Explore Campus Societies</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-
-          <!-- Society 1: Computer Science -->
-          <div class="col">
-            <div class="card h-100 society-card">
-              <img src="images/society-computer.jpg" class="card-img-top" alt="Students collaborating at SMIU Computer Science Society" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="badge society-badge">145 Members</span>
-                  <small class="text-muted">IT &amp; Computing</small>
-                </div>
-                <h5 class="card-title">Computer Science Society</h5>
-                <p class="card-text text-muted small">Organizes coding bootcamps, hackathons, competitive programming contests, and tech talks.</p>
-                <a href="register.html" class="btn btn-smiu btn-sm mt-auto">Join Society</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Society 2: Robotics -->
-          <div class="col">
-            <div class="card h-100 society-card">
-              <img src="images/society-robotics.jpg" class="card-img-top" alt="Hardware prototyping at SMIU Robotics & AI Club" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="badge society-badge">88 Members</span>
-                  <small class="text-muted">Engineering &amp; AI</small>
-                </div>
-                <h5 class="card-title">Robotics &amp; AI Club</h5>
-                <p class="card-text text-muted small">Builds autonomous robots, IoT prototypes, and machine learning projects for national expos.</p>
-                <a href="register.html" class="btn btn-smiu btn-sm mt-auto">Join Society</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Society 3: Literary -->
-          <div class="col">
-            <div class="card h-100 society-card">
-              <img src="images/society-literary.jpg" class="card-img-top" alt="Students speaking at SMIU Literary & Debating Society" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="badge society-badge">110 Members</span>
-                  <small class="text-muted">Debate &amp; Writing</small>
-                </div>
-                <h5 class="card-title">Literary &amp; Debating Society</h5>
-                <p class="card-text text-muted small">Hosts parliamentary debates, poetry mushairas, creative writing workshops, and campus magazines.</p>
-                <a href="register.html" class="btn btn-smiu btn-sm mt-auto">Join Society</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Society 4: Drama & Arts -->
-          <div class="col">
-            <div class="card h-100 society-card">
-              <img src="images/society-drama.jpg" class="card-img-top" alt="Stage rehearsal by SMIU Dramatics & Performing Arts Society" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="badge society-badge">95 Members</span>
-                  <small class="text-muted">Performing Arts</small>
-                </div>
-                <h5 class="card-title">Dramatics &amp; Arts Society</h5>
-                <p class="card-text text-muted small">Produces stage plays, cultural night performances, theatre workshops, and fine arts showcases.</p>
-                <a href="register.html" class="btn btn-smiu btn-sm mt-auto">Join Society</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Society 5: Photography -->
-          <div class="col">
-            <div class="card h-100 society-card">
-              <img src="images/society-photography.jpg" class="card-img-top" alt="Student photographer covering a campus event" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="badge society-badge">76 Members</span>
-                  <small class="text-muted">Media &amp; Film</small>
-                </div>
-                <h5 class="card-title">Photography &amp; Media Club</h5>
-                <p class="card-text text-muted small">Covers official university events, hosts photo walks, and runs video editing and filmmaking labs.</p>
-                <a href="register.html" class="btn btn-smiu btn-sm mt-auto">Join Society</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Society 6: Sports -->
-          <div class="col">
-            <div class="card h-100 society-card">
-              <img src="images/society-sports..jpg" class="card-img-top" alt="Athletes practicing with SMIU Sports Society" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="badge society-badge">160 Members</span>
-                  <small class="text-muted">Athletics</small>
-                </div>
-                <h5 class="card-title">SMIU Sports Society</h5>
-                <p class="card-text text-muted small">Manages inter-departmental cricket, football, badminton, and table tennis leagues all year.</p>
-                <a href="register.html" class="btn btn-smiu btn-sm mt-auto">Join Society</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
+    <!-- ===== HOW TO JOIN ===== -->
+    <section class="section-padding bg-white">
+      <div class="container text-center">
+        <h2 class="section-title">Ready to Join?</h2>
+        <p class="text-muted">Open the registration form and choose "Society Membership Application".</p>
+        <a href="register.html" class="btn btn-smiu">Register Now</a>
       </div>
     </section>
   </main>

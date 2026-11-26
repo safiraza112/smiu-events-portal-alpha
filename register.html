@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register online for SMIU events and societies.">
   <title>Register | SMIU Events Portal</title>
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
@@ -35,11 +36,11 @@
   </header>
 
   <main>
-    <!-- Page Header -->
-    <section class="hero-section py-5">
+    <!-- ===== HERO ===== -->
+    <section class="hero-section">
       <div class="container">
-        <h1 class="display-5 fw-bold">Event &amp; Society Registration</h1>
-        <p class="lead mb-0">Fill out the student registration form below to reserve your seat at upcoming SMIU activities.</p>
+        <h1 class="display-4 fw-bold">Event &amp; Society Registration</h1>
+        <p class="lead mt-4 mb-0">Fill out the student registration form below to reserve your seat at upcoming SMIU activities.</p>
       </div>
     </section>
 
@@ -75,7 +76,7 @@
                   <!-- Phone -->
                   <div class="col-md-6">
                     <label for="studentPhone" class="form-label fw-semibold">Phone Number</label>
-                    <input type="tel" class="form-control" id="studentPhone" name="studentPhone" placeholder="03XX-XXXXXXX" required>
+                    <input type="tel" class="form-control" id="studentPhone" name="studentPhone" placeholder="03XX-XXXXXXX" pattern="03[0-9]{2}-?[0-9]{7}" title="Use the format 03XX-XXXXXXX" required>
                   </div>
 
                   <!-- Department Select -->
@@ -97,9 +98,9 @@
                     <label for="eventSelect" class="form-label fw-semibold">Select Event / Society</label>
                     <select class="form-select" id="eventSelect" name="event" required>
                       <option value="" selected disabled>Choose an event or society...</option>
-                      <option value="tech-fest">Annual Tech Fest (5 Dec)</option>
-                      <option value="web-bootcamp">Web Development Bootcamp (1 Dec)</option>
                       <option value="cricket">Inter-Department Cricket (28 Nov)</option>
+                      <option value="web-bootcamp">Web Development Bootcamp (1 Dec)</option>
+                      <option value="tech-fest">Annual Tech Fest (5 Dec)</option>
                       <option value="entrepreneurship">Entrepreneurship Talk (8 Dec)</option>
                       <option value="cultural-night">Cultural Night (12 Dec)</option>
                       <option value="career-day">SMIU Career Day (18 Dec)</option>
@@ -108,8 +109,8 @@
                   </div>
 
                   <!-- Academic Year (Radio Buttons) -->
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold d-block">Academic Year</label>
+                  <fieldset class="col-md-6">
+                    <legend class="form-label fw-semibold fs-6">Academic Year</legend>
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" type="radio" name="academicYear" id="year1" value="1st Year" required>
                       <label class="form-check-label" for="year1">1st Year</label>
@@ -126,28 +127,28 @@
                       <input class="form-check-input" type="radio" name="academicYear" id="year4" value="4th Year">
                       <label class="form-check-label" for="year4">4th Year</label>
                     </div>
-                  </div>
+                  </fieldset>
 
                   <!-- Interests (Checkboxes) -->
-                  <div class="col-md-6">
-                    <label class="form-label fw-semibold d-block">Areas of Interest</label>
+                  <fieldset class="col-md-6">
+                    <legend class="form-label fw-semibold fs-6">Areas of Interest</legend>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="intCoding" value="Coding">
+                      <input class="form-check-input" type="checkbox" id="intCoding" name="interests" value="Coding">
                       <label class="form-check-label" for="intCoding">Coding</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="intSports" value="Sports">
+                      <input class="form-check-input" type="checkbox" id="intSports" name="interests" value="Sports">
                       <label class="form-check-label" for="intSports">Sports</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="intDebate" value="Debate">
+                      <input class="form-check-input" type="checkbox" id="intDebate" name="interests" value="Debate">
                       <label class="form-check-label" for="intDebate">Debate</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="intArts" value="Arts">
+                      <input class="form-check-input" type="checkbox" id="intArts" name="interests" value="Arts">
                       <label class="form-check-label" for="intArts">Arts &amp; Media</label>
                     </div>
-                  </div>
+                  </fieldset>
 
                   <!-- Message / Notes (Textarea) -->
                   <div class="col-12">
@@ -158,7 +159,7 @@
                   <!-- Terms Checkbox -->
                   <div class="col-12">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                      <input class="form-check-input" type="checkbox" id="agreeTerms" name="agreeTerms" required>
                       <label class="form-check-label" for="agreeTerms">
                         I confirm that my SMIU student details are accurate and I agree to follow the event code of conduct.
                       </label>
@@ -176,3 +177,10 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+  <!-- Bootstrap 5.3.3 JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
