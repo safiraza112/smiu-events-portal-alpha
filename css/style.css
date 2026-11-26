@@ -306,7 +306,6 @@ h1, h2, h3, h4, h5 {
       url("../images/campus-hero.jpg") center / cover no-repeat;
     padding: 4.5rem 0 3.5rem;
   }
-feature/navbar-logo
 }
 /* ---------- Navbar logo and full name ---------- */
 .brand-logo {
@@ -338,5 +337,4 @@ feature/navbar-logo
 @media (max-width: 400px) {
   .brand-text small { display: none; }
 
- main
 }
