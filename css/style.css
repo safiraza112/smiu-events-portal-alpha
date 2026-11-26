@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5 {
   right: 8%;
 }
 
- alpha
+ 
 
 /* ---------- 14. Events & Schedule Table Styling ---------- */
 .schedule-table thead {
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5 {
   transform: scale(1.1);
   background-color: var(--smiu-primary-dark);
 }
-ibrahim
+
 /* ---------- 15. Societies & Registration Form Styling ---------- */
 .society-badge {
   background-color: var(--smiu-primary);
