@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register online for SMIU events and societies.">
   <title>Register | SMIU Events Portal</title>
   <!-- Bootstrap 5.3.3 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +20,7 @@
   <header>
     <nav class="navbar navbar-expand-lg smiu-navbar navbar-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">SMIU <span>Events</span></a>
+        <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="images/smiu-logo.png" alt="SMIU logo" class="brand-logo"><span class="brand-text"><strong>SMIU <span>Events Portal</span></strong><small>Sindh Madressatul Islam University</small></span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,10 +40,147 @@
 
   <!-- ===== MAIN CONTENT ===== -->
   <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Event &amp; Society Registration</h1>
+        <p class="lead mt-4 mb-0">Fill in the form below to book your seat at upcoming SMIU events and societies.</p>
+      </div>
+    </section>
+
+    <!-- Registration Form Section -->
     <section class="section-padding">
       <div class="container">
-        <h1 class="section-title">Register</h1>
-        <!-- TODO: build this page on your own branch -->
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+              <h2 class="section-title mb-4">Student Registration Form</h2>
+
+              <form action="#" method="post">
+                <div class="row g-3">
+
+                  <!-- Full Name -->
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label fw-semibold">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" autocomplete="name" placeholder="e.g. Ibrahim Abbasi" required>
+                  </div>
+
+                  <!-- Roll Number -->
+                  <div class="col-md-6">
+                    <label for="rollNumber" class="form-label fw-semibold">Roll Number</label>
+                    <input type="text" class="form-control" id="rollNumber" name="rollNumber" placeholder="e.g. BSE-24S-102" required>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="col-md-6">
+                    <label for="studentEmail" class="form-label fw-semibold">University Email</label>
+                    <input type="email" class="form-control" id="studentEmail" name="studentEmail" autocomplete="email" placeholder="name@stu.smiu.edu.pk" required>
+                  </div>
+
+                  <!-- Phone -->
+                  <div class="col-md-6">
+                    <label for="studentPhone" class="form-label fw-semibold">Phone Number</label>
+                    <input type="tel" class="form-control" id="studentPhone" name="studentPhone" autocomplete="tel" placeholder="03XX-XXXXXXX" pattern="03[0-9]{2}-?[0-9]{7}" title="Use the format 03XX-XXXXXXX" required>
+                  </div>
+
+                  <!-- Department Select -->
+                  <div class="col-md-6">
+                    <label for="departmentSelect" class="form-label fw-semibold">Department</label>
+                    <select class="form-select" id="departmentSelect" name="department" required>
+                      <option value="" selected disabled>Choose your department...</option>
+                      <option value="se">Software Engineering</option>
+                      <option value="cs">Computer Science</option>
+                      <option value="ai">Artificial Intelligence &amp; Data Science</option>
+                      <option value="bba">Business Administration</option>
+                      <option value="media">Media &amp; Communication Studies</option>
+                      <option value="env">Environmental Sciences</option>
+                    </select>
+                  </div>
+
+                  <!-- Event Select -->
+                  <div class="col-md-6">
+                    <label for="eventSelect" class="form-label fw-semibold">Select Event / Society</label>
+                    <select class="form-select" id="eventSelect" name="event" required>
+                      <option value="" selected disabled>Choose an event or society...</option>
+                      <option value="cricket">Inter-Department Cricket (28 Nov)</option>
+                      <option value="web-bootcamp">Web Development Bootcamp (1 Dec)</option>
+                      <option value="tech-fest">Annual Tech Fest (5 Dec)</option>
+                      <option value="entrepreneurship">Entrepreneurship Talk (8 Dec)</option>
+                      <option value="cultural-night">Cultural Night (12 Dec)</option>
+                      <option value="career-day">SMIU Career Day (18 Dec)</option>
+                      <option value="society-membership">Society Membership Application</option>
+                    </select>
+                  </div>
+
+                  <!-- Academic Year (Radio Buttons) -->
+                  <fieldset class="col-md-6">
+                    <legend class="form-label fw-semibold fs-6">Academic Year</legend>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="academicYear" id="year1" value="1st Year" required>
+                      <label class="form-check-label" for="year1">1st Year</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="academicYear" id="year2" value="2nd Year">
+                      <label class="form-check-label" for="year2">2nd Year</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="academicYear" id="year3" value="3rd Year">
+                      <label class="form-check-label" for="year3">3rd Year</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="academicYear" id="year4" value="4th Year">
+                      <label class="form-check-label" for="year4">4th Year</label>
+                    </div>
+                  </fieldset>
+
+                  <!-- Interests (Checkboxes) -->
+                  <fieldset class="col-md-6">
+                    <legend class="form-label fw-semibold fs-6">Areas of Interest</legend>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="intCoding" name="interests" value="Coding">
+                      <label class="form-check-label" for="intCoding">Coding</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="intSports" name="interests" value="Sports">
+                      <label class="form-check-label" for="intSports">Sports</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="intDebate" name="interests" value="Debate">
+                      <label class="form-check-label" for="intDebate">Debate</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="intArts" name="interests" value="Arts">
+                      <label class="form-check-label" for="intArts">Arts &amp; Media</label>
+                    </div>
+                  </fieldset>
+
+                  <!-- Message / Notes (Textarea) -->
+                  <div class="col-12">
+                    <label for="studentMessage" class="form-label fw-semibold">Additional Notes or Team Members (Optional)</label>
+                    <textarea class="form-control" id="studentMessage" name="message" rows="4" maxlength="500" placeholder="Mention your team members' roll numbers or any special requirements..."></textarea>
+                  </div>
+
+                  <!-- Terms Checkbox -->
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                      <label class="form-check-label" for="agreeTerms">
+                        I confirm that my SMIU student details are accurate and I agree to follow the event code of conduct.
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-smiu px-4">Submit Registration</button>
+                    <button type="reset" class="btn btn-outline-secondary rounded-pill ms-2 px-4">Clear Form</button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -67,7 +205,7 @@
         <div class="col-6 col-md-4">
           <h5>Student Affairs Office</h5>
           <p class="mb-1"><i class="bi bi-geo-alt"></i> SMIU, Karachi</p>
-          <p class="mb-1"><i class="bi bi-envelope"></i> studentaffairs@smiu.edu.pk</p>
+          <p class="mb-1 text-break"><i class="bi bi-envelope"></i> studentaffairs@smiu.edu.pk</p>
         </div>
       </div>
       <hr class="border-secondary">
@@ -79,5 +217,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-<!-- Member 3: Event Registration Form Grid Section (Ibrahim) -->
