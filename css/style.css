@@ -338,3 +338,19 @@ h1, h2, h3, h4, h5 {
   .brand-text small { display: none; }
 
 }
+
+/* ---------- Event details: show only the selected event ---------- */
+.event-view {
+  display: none;
+  scroll-margin-top: 100px;
+}
+
+.event-view:target,
+main:not(:has(.event-view:target)) #tech-fest {
+  display: block;
+}
+
+/* ---------- Footer office column uses full width on phones ---------- */
+@media (max-width: 575.98px) {
+  .smiu-footer .col-md-4 { width: 100%; }
+}
